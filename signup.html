@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Register with us</h1>
+        <form name="registration" id="registration" onsubmit="event.preventDefault(); validate()" >
+            <div class="box">
+                <label for="Username">UserName</label><br>
+                <input type="text" name="UserName" id="UserName" class="ip" placeholder="Enter UserName" maxlength="20">
+                <div id="NoUserName" class="box1"></div>
+            </div>
+            <div class="box">
+                <label for="Email">Email</label><br>
+                <input type="text" name="Email" id="Email" class="ip" placeholder="Enter Email">
+                <div id="NoEmail" class="box1"></div>
+            </div>
+            <div class="box">
+                <label for="Password">Password</label><br>
+                <input type="password" name="Password" id="Password" class="ip" placeholder="Enter Password">
+                <div id="NoPassowrd" class="box1"></div>
+            </div>
+            <div class="box">
+                <label for="Confirm Password">Confirm Password</label><br>
+                <input type="password" name="ConfirmPassword" id="ConfirmPassword" class="ip" placeholder="Enter password again">
+                <div id="NoConfirmPassword" class="box1"></div>
+            </div>
+            <input type="submit" value="Submit" id="submit">
+            <!-- <input type="button" value="Submit"> -->
+
+        </form>
+    </div>
+
+    <script src="./validator.js"></script>
+
+</body>
+
+</html>
